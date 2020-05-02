@@ -1,0 +1,19 @@
+.button-github {
+   background-color: $color-black;
+   color: $color-white;
+   padding: 4rem 0.7rem;
+   padding-bottom: 4.5rem;
+   clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+
+   i {
+      font-size: 3rem;
+      padding: 0 1rem;
+   }
+
+   transition: all 0.15s linear;
+
+   &:hover {
+      padding: 4.7rem 0.7rem;
+      padding-bottom: 4.7rem;
+   }
+}

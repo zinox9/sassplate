@@ -1,0 +1,37 @@
+{
+   "name": "boilerplate",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "browserslist": [
+      "last 10 versions",
+      "cover 99.5%",
+      "not dead"
+   ],
+   "scripts": {
+      "babel:watch": "babel ./src/main.js --watch --out-file ./public/js/script.js --source-maps --presets=@babel/preset-env ",
+      "compile:watch": "node-sass ./src/scss/main.scss ./public/css/style.css --watch",
+      "serve": "live-server --open=./public/",
+      "babel": "babel ./src/main.js --out-file ./public/js/script.js --source-maps --presets=@babel/preset-env ",
+      "compile": "node-sass ./src/scss/main.scss ./public/css/style.css",
+      "concat": "concat -o ./public/css/vendors.css ./src/vendors/animate.css ./src/vendors/font-awesome.css",
+      "prefix": "postcss ./public/css/*.css --use autoprefixer -b browserslist --dir ./public/css",
+      "compress": "csso ./public/css/style.css -o ./public/css/style.css && csso ./public/css/vendors.css -o ./public/css/vendors.css --comments none",
+      "start": "npm-run-all --parallel concat compile:watch babel:watch serve",
+      "build": "npm-run-all --sequential babel compile concat prefix compress"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/cli": "^7.8.4",
+      "@babel/core": "^7.9.6",
+      "@babel/preset-env": "^7.9.6",
+      "autoprefixer": "^9.7.6",
+      "concat": "^1.0.3",
+      "csso-cli": "^3.0.0",
+      "live-server": "^1.2.1",
+      "node-sass": "^4.14.0",
+      "npm-run-all": "^4.1.5",
+      "postcss-cli": "^7.1.1"
+   }
+}

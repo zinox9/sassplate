@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/main.js"],"names":[],"mappings":";;AAAA,IAAM,MAAM,GAAG,SAAT,MAAS,GAAM;AAClB,SAAO,oCAAP;AACF,CAFD;;AAIA,OAAO,CAAC,GAAR,CAAY,MAAM,EAAlB","file":"script.js","sourcesContent":["const sample = () => {\r\n   return \"This is a sample printing function\";\r\n};\r\n\r\nconsole.log(sample());\r\n"]}

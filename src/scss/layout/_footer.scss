@@ -1,0 +1,13 @@
+.footer {
+   background-color: $color-black;
+   min-height: 5vh;
+   padding: 1 rem;
+
+   &__text {
+      text-align: center;
+      font-size: 2rem;
+      i {
+         color: $color-secondary;
+      }
+   }
+}
