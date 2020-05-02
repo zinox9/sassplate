@@ -10,15 +10,15 @@
    ],
    "scripts": {
       "babel:watch": "babel ./src/main.js --watch --out-file ./public/js/script.js --source-maps --presets=@babel/preset-env ",
-      "compile:watch": "node-sass ./src/scss/main.scss ./public/css/style.css --watch",
+      "sass:watch": "node-sass ./src/scss/main.scss ./public/css/style.css --watch",
+      "concat": "concat -o ./public/css/vendors.css ./src/vendors/animate.css ./src/vendors/font-awesome.css",
       "serve": "live-server --open=./public/",
       "babel": "babel ./src/main.js --out-file ./public/js/script.js --source-maps --presets=@babel/preset-env ",
-      "compile": "node-sass ./src/scss/main.scss ./public/css/style.css",
-      "concat": "concat -o ./public/css/vendors.css ./src/vendors/animate.css ./src/vendors/font-awesome.css",
+      "sass": "node-sass ./src/scss/main.scss ./public/css/style.css",
       "prefix": "postcss ./public/css/*.css --use autoprefixer -b browserslist --dir ./public/css",
       "compress": "csso ./public/css/style.css -o ./public/css/style.css && csso ./public/css/vendors.css -o ./public/css/vendors.css --comments none",
-      "start": "npm-run-all --parallel concat compile:watch babel:watch serve",
-      "build": "npm-run-all --sequential babel compile concat prefix compress"
+      "start": "npm-run-all --parallel concat sass:watch babel:watch serve",
+      "build": "npm-run-all --sequential babel sass concat prefix compress"
    },
    "author": "",
    "license": "ISC",
