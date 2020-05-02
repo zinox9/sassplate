@@ -15,6 +15,7 @@
 -  Development Setup : parallelly compile & Serve
 -  Also Contains Babel setup for Javascript
 -  Gitignore file included
+-  Media Queries Manager available in mixins
 
 ---
 
