@@ -20,7 +20,7 @@
    &__description {
       background-color: $color-white;
       color: $color-black;
-      padding: 5rem 10rem;
+      padding: 4rem 7rem;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -36,18 +36,16 @@
    }
 
    &__description-heading {
-      font-size: 3rem;
+      font-size: 4rem;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
          "Lucida Sans", Arial, sans-serif;
       font-weight: 200;
-      margin: 1rem 0;
-      margin-left: -4rem;
+      margin: 1rem 0 2rem;
    }
 
    &__list {
       color: $color-black;
       font-size: 2rem;
-      margin-right: -8rem;
       line-height: 1.5;
    }
 

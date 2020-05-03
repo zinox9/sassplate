@@ -21,14 +21,14 @@
 
 ## What this boilerplate contains
 
--  Integrated Font-Awesome, Animate CSS
--  Global CSS reset
--  7-1 Folder Architecture
--  Npm setup for Sass : compile, prefix & compress
--  Development Setup : parallelly compile & Serve
--  Also Contains Babel setup for JavaScript
--  Gitignore file included
--  Media Queries Manager available in mixins
+- **Font-Awesome** and **Animate CSS** is built in !
+- **7-1 Folder** Architecture
+- Global **Reset**
+- **Gitignore** Included
+- **Media Query** Manager
+- JavaScript **Babel** Compilation 
+- **Development scripts** : compile, serve and watch
+- **Production scripts** : compile, prefix and compress.
 
 ---
 
